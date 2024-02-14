@@ -1,4 +1,3 @@
-
 // NEDRÄKNING
 
 const days = document.getElementById("days")
@@ -22,16 +21,17 @@ function updateCountdowntime() {
     diff = diff-(m*1000*60)
     const s = Math.floor(diff/1000)
     
+    if (days != null && hours != null && minutes != null && seconds != null) {
+        days.innerHTML = d < 10 ? '0' + d : d;
+        hours.innerHTML = h < 10 ? '0' + h : h;
+        minutes.innerHTML = m < 10 ? '0' + m : m;
+        seconds.innerHTML = s < 10 ? '0' + s : s;    
+    }
 
-    days.innerHTML = d < 10 ? '0' + d : d;
-    hours.innerHTML = h < 10 ? '0' + h : h;
-    minutes.innerHTML = m < 10 ? '0' + m : m;
-    seconds.innerHTML = s < 10 ? '0' + s : s;
 }
 
 updateCountdowntime()
 setInterval(updateCountdowntime, 1000);
-
 
 
     
@@ -50,6 +50,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
