@@ -143,23 +143,35 @@ nav { /*Bakgrunden på meny-raden*/
     background-position-x: center;
     margin:0
 }
+/* SPECIFIK CSS FÖR GALLERI-SIDAN */
+
+.body_galleri {
+    background-image: url(krigare.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin:0
+}
 
 * {box-sizing:border-box}
 
-img {vertical-align: middle;}
+/*Självaste bildgalleriet justeras nedan (jag har tagit koden från W3 Schools så jag fattar inte allt...)*/
+
+img {
+    vertical-align: middle;
+    width: 1000px;
+}
 .mySlides {
     display: none;
-    border: 1px solid #5b607c;
+    width: 100%;
+    /*border: 1px solid #5b607c;*/
+    margin-top: 5vh;
 }
-    
 
-
-/* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    border: 1px solid #5b607c;
+    /*border: 1px solid #5b607c;*/
   }
   
   /* Next & previous buttons */
