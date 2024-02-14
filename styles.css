@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background-color: black;
+    margin: auto;
+}
+
+header { /*Denna justerar framförallt startsidan*/
+    background-color: black;
+    background-image: url(Header_v2.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    /*border: 1px solid #474b5e;*/
+}
+
+.headimg { /*Denna justerar loggan på startsidan*/
+    width: 50%;  
+    margin-top: -5vw;
+    margin-bottom: -6vw;
+    /*border: 1px solid #c9cedf;*/
+}
+
+
+
+
+/* NEDRÄKNINGEN PÅ STARTSIDAN*/
+
+h3 {  /*Endast för texten "Filmen börjar om:"*/
+    margin: -2vw auto 2.5vw;
+    font-size: 3vw;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+small { /*Justerar texten "days, hours, minutes och secounds"*/
+    color: #ffffff;
+}
+
+.countdown { /*justerar hur nedräkningen ser ut*/ 
+    /*border: 1px solid #5b607c;*/
+    display: flex; /*Jag har använt felxbox för nedräkningen då tutorialen jag kollade på använde det*/
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 20vw;
+    padding-top: 5vw;
+    margin-top: -7vw;
+    background-color: rgba(26, 26, 26, 0.7);
+}
+
+.time { /*Justerar boxarna för dagar, timmar, osv, i nedräkningen*/
+    /*border: 1px solid #5b607c;*/
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+}
+
+.time h4 { /*Justerar hur siffrorna i nedräkningen ser ut*/
+    font-size: 3vw;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+
+
+/* MENY */
+
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.nav-grid-start { /*Justerar meny-raden på startsidan*/
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    /*border: 1px solid #c9cedf;*/
+    width: 100vw;
+    justify-content: center;
+}
+.nav-grid-start > .nav-grid-item{
+    /*border: 1px solid #c9cedf;*/
+    width: 25vw;
+}
+
+.nav-grid { /*Justerar meny-raden på övriga sidor*/
+   display: grid;
+   grid-template-columns: auto auto auto auto auto; 
+   /*border: 1px solid #c9cedf;*/
+   justify-content: center;
+}
+
+/*Nav-grid-item är till för att justera boxarna i grid:en*/
+.nav-grid-item { 
+    /*border: 1px solid #5b607c;*/
+    width: 20vw;
+}
+
+h2 { /*Texten i meny-raden (ej startsidan)*/
+    color: white;
+    text-align: center;
+    font-size: 20pt;
+    margin: 0vw 3vw;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.h2_startsida { /*Meny-radens text är något större på startsidan*/
+    font-size: 30pt;
+    margin-top: -100px;
+}
+
+nav { /*Bakgrunden på meny-raden*/
+    background-color: #0c191e;
+    width: 100vw;
+    padding-bottom: 8px;
+    margin: auto;
+}
+
+.logo { /*Juserar loggan i meny-raden (ej på startsidan)*/
+    display: grid;
+    width: 200px;
+    margin: -51px auto -51px auto;
+    /*border: 1px solid #5b607c;*/
+}
+
+
+
+
+/* SPECIFIK CSS FÖR GALLERI-SIDAN */
+
+.body_galleri {
+    background-image: url(krigare.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin:0
+}
+
+* {box-sizing:border-box}
+
+img {vertical-align: middle;}
+.mySlides {
+    display: none;
+    border: 1px solid #5b607c;
+}
+    
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border: 1px solid #5b607c;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+    
+  }
+  
+/* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+
+
+
+/* SPECIFIK CSS FÖR RECESIONER-SIDAN */
+
+.body_recensioner {
+    background-image: url(fackla.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+
+
+
+/* SPECIFIK CSS FÖR BILJETTER-SIDAN */
+
+.body_biljetter {
+    background-image: url(sten.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
