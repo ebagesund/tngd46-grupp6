@@ -23,10 +23,7 @@ header { /*Denna justerar framförallt startsidan*/
     /*border: 1px solid #c9cedf;*/
 }
 
-
-
-
-/* NEDRÄKNINGEN PÅ STARTSIDAN*/
+/* NEDRÄKNINGEN PÅ STARTSIDAN */
 
 h3 {  /*Endast för texten "Filmen börjar om:"*/
     margin: -2vw auto 2.5vw;
@@ -222,11 +219,6 @@ img {
     to {opacity: 1}
 }
 
-
-
-
-
-
 /* SPECIFIK CSS FÖR RECESIONER-SIDAN */
 
 .body_recensioner {
@@ -235,13 +227,18 @@ img {
     background-position-x: center;
 }
 
-
-
-
 /* SPECIFIK CSS FÖR BILJETTER-SIDAN */
 
 .body_biljetter {
     background-image: url(sten.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+/* SPECIFIK CSS FÖR FILMEVENT-SIDAN */
+
+.body_filmevent {
+    background-image: url(krigare.png);
     background-repeat: no-repeat;
     background-position-x: center;
 }
