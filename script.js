@@ -5,7 +5,7 @@ const hours = document.getElementById("hours")
 const minutes = document.getElementById("minutes")
 const seconds = document.getElementById("seconds")
 
-const realeaseDate = new Date("may 1 2024 21:00:00")
+const realeaseDate = new Date("june 21 2024 21:00:00")
 
 //uppdate Countdowntime
 function updateCountdowntime() {
@@ -62,3 +62,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// Biljettbokning

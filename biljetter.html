@@ -16,10 +16,105 @@
         <a href="index.html" class="nav-grid-item"><h2>Startsida</h2></a>
         <a href="biljetter.html" class="nav-grid-item"><h2>Biljetter</h2></a>
         <a href="recensioner.html" class="nav-grid-item"><h2>Recensioner</h2></a>
-        <a href="galleri.html" class="nav-grid-item"><h2>Galleri</h2></a></a>
+        <a href="galleri.html" class="nav-grid-item"><h2>Galleri</h2></a>
         <a href="filmevent.html" class="nav-grid-item"><h2>Filmevent</h2></a>
     </div>
   </nav>
+
+  <div class="movie-container">
+    <label>Biljettbokning</label>
+    <select id="movie">
+      <option value="100">Österljus: Gryningen av den gyllene staden (100kr)</option> 
+    </select>
+
+  <ul id="ul">
+    <li>
+      <div class="seat tillgänglig"></div>
+      <small>Tillgänglig</small>
+    </li>
+
+    <li>
+      <div class="seat vald"></div>
+      <small>Vald</small>
+    </li>
+
+    <li>
+      <div class="seat upptagen"></div>
+      <small>Upptagen</small>
+    </li>
+  </ul>
+
+  <div class="salon">
+    <div class="screen"></div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat upptagen"></div>
+      <div class="seat upptagen"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat upptagen"></div>
+      <div class="seat upptagen"></div>
+      <div class="seat upptagen"></div>
+      <div class="seat upptagen"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+  </div>
+
+  <p class="text">
+  Du har valt <span id="count">0</span> platser som kostar <span id="total">0</span> kr
+  </p>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
