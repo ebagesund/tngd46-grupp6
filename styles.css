@@ -6,10 +6,6 @@ body {
     margin: auto;
 }
 
-/* .container {
-    display: grid;
-} */
-
 header { /*Denna justerar framförallt startsidan*/
     background-color: black;
     background-image: url(Header_v2.png);
@@ -26,6 +22,7 @@ header { /*Denna justerar framförallt startsidan*/
     margin-bottom: -6vw;
     /*border: 1px solid #c9cedf;*/
 }
+
 
 
 
@@ -151,7 +148,7 @@ nav { /*Bakgrunden på meny-raden*/
 
 * {box-sizing:border-box}
 
-/*Självaste bildgalleriet justeras nedan (jag har tagit koden från W3 Schools så jag fattar inte allt...)*/
+/*Självaste bildgalleriet justeras nedan*/
 
 img {
     vertical-align: middle;
@@ -230,8 +227,6 @@ img {
 
 
 
-
-
 /* SPECIFIK CSS FÖR RECESIONER-SIDAN */
 
 .body_recensioner {
@@ -253,10 +248,12 @@ img {
     grid-template-columns: 5vw 40vw 10vw 40vw 5vw;
 }
 
+/*Texten på sidan*/
 p {
     color: white;
 }
 
+/*Bild på stjärnorna*/
 .stars {
     width: 120px;
 }
@@ -269,29 +266,73 @@ p {
     /*border: 1px solid #cdcfd6;*/
 }
 
+.hide1 {
+    grid-column: 2;
+    margin-left: 100px;
+    text-align: left;
+    opacity: 0;
+}
+
+.recension1:hover + .hide1 {
+    opacity: 1;
+}
+
 .recension2 {
     grid-column: 4;
-    margin-top: 300px;
     margin-right: 100px;
     text-align: right;
+    opacity: 1;
     /*border: 1px solid #cdcfd6;*/
+}
+
+.hide2 {
+    grid-column: 4;
+    margin-right: 100px;
+    text-align: left;
+    opacity: 0;
+}
+
+.recension2:hover + .hide2 {
+    opacity: 1;
 }
 
 .recension3 {
     grid-column: 2;
     margin-left: 100px;
+    opacity: 1;
     /*border: 1px solid #cdcfd6;*/
+}
+
+.hide3 {
+    grid-column: 2;
+    margin-left: 100px;
+    opacity: 0;
+}
+
+.recension3:hover + .hide3 {
+    opacity: 1;
 }
 
 .recension4 {
     grid-column: 4;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-right: 100px;
     margin-bottom: 200px;
     text-align: right;
     /*border: 1px solid #cdcfd6;*/
 }
 
+.hide4 {
+    grid-column: 4;
+    margin-right: 100px;
+    margin-top: -20vh;
+    text-align: left;
+    opacity: 0;
+}
+
+.recension4:hover + .hide4 {
+    opacity: 1;
+}
 
 
 
@@ -304,6 +345,7 @@ p {
     background-position-x: center;
 }
 
+/*Biljettsidan är uppbyggd med grid i tre kolumner*/
 .movie-container {
     display: grid;
     grid-template-columns: 20vw 60vw 20vw;
@@ -311,87 +353,92 @@ p {
     text-align: center;
 }
 
+/*"Meny" där rätt filmen väljs (dock finns det endast en)*/
 #movie {
     grid-column: 2;
     border: 0;
-    border-radius: 5px;
-    width: 50%;
-    margin: auto;
+    border-radius: 5px; /*Radie på ramen på rutan för att få rundarde hörn*/
+    width: 50%; /*Rutan tar upp 50% av column 2*/
+    margin: auto; /*placerar rutan i mitten av columnen*/
     margin-top: 50px;
 }
 
+/*Justerar listan för tillgänglig, vald och upptagen*/
 .showcase {
     display: grid;
     grid-column: 2;
-    list-style-type: none;
-    justify-content: center;
+    list-style-type: none; /*Tar bort punkter på listan*/
+    justify-content: center; /*Placerar listan i mitten av */
     padding: 10px;
-    align-items: center;
     text-align: left;
 }
 
+/*Rubrik på sidan*/
 label { 
     grid-column: 2;
     color: white;
     font-size: 36pt;
 }
 
+/*Justerar texten som berättar valda platser och kostnad*/
 .text {
     grid-column: 2;
     text-align: center;
 }
 
+/*Placerar salongen i column 2*/
 .salon {
     grid-column: 2;
 }
 
+/*Justerar platserna i salongen och över*/
 .seat {
     grid-column: 2;
     background-color: white;
     height: 12px;
     width: 15px;
     margin: 3px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; /*Radien gör vänstra övre hörnet rundat*/
+    border-top-right-radius: 10px; /*Radien gör högra övre hörnet rundat*/
 }
 
+/*Justerar radernas placering*/
 .row {
     grid-column: 2;
-    display: flex;
-    justify-content: center;
+    display: flex; /*Placerar platserna i rader istället för i en rad*/
+    justify-content: center; /*Placerar raderna i mitten av columnen*/
 }
 
+/*Justerar färgen för de valda platserna*/
 .seat.vald {
     background-color: #c26716;
 }
 
-.vald {
-    background-color: #c26716;
-}
-
+/*Justerar färgen för de upptagna platserna*/
 .seat.upptagen {
     background-color: #a62316;
 }
 
+/*Gör de tillgängliga platserna lite större när man hoverar över*/
 .seat:not(.upptagen):hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
-#ul .seat:not(.upptagen):hover {
+/*Tar bort hoverfunktionen för listan*/
+.showcase .seat:not(.upptagen):hover {
     cursor: default;
     transform: scale(1);
 }
 
+/*Justerar "biodukens" utseende*/
 .screen {
     background-color: white;
     width: 160px;
     height: 70px;
-    transform: rotateX(-45deg);
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
-    display: grid;
-    grid-column: auto;
-    margin: auto;
+    transform: rotateX(-45deg); /*Ger duken lutning*/
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75); /*Ger duken ett ljus*/
+    margin: auto; 
 }
 
 .salon {
@@ -399,32 +446,31 @@ label {
     margin-bottom: 30px;
 }
 
-p.text {
-    margin: 5px 0;
-}
-
+/*Ändrar textfärg på antal platser och kostnad*/
 p.text span {
     color: #c26716;
 }
 
+/*Justerar formuläret: placering och textfärg*/
 .kontakt {
     grid-column: 2;
     color: white;
 }
 
+/*Justerar formuläret: ruta och typsnitt*/
 .form-control {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 0;
-    border-radius: 5px;
+    border-radius: 5px; /*Ger rundade hörn*/
 }
 
+/*Justerar skicka-knappen*/
 .button {
     margin: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 0;
-    border-radius: 5px;
+    border-radius: 5px; /*Ger rundade hörn*/
 }
-
 
 
 
@@ -437,12 +483,14 @@ p.text span {
     background-position-x: center;
 }
 
+/*Eventsidan är uppbyggd med grid i fyra kolumner*/
 .container-filmevent {
     display: grid;
     grid-template-columns: 20px 50% 50% 20px;
     margin-top: 50px;
 }
 
+/*Justerar rubriken*/
 .rubrik-sida {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -451,11 +499,13 @@ p.text span {
     margin: 0;
 }
 
+/*Justerar brödtexten*/
 .text-filmevent {
     grid-column: 2;
     margin-top: 50px;
 }
 
+/*Justerar bilden på postern*/
 .poster {
     grid-column: 3;
     width: 80%;

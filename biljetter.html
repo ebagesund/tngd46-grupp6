@@ -7,12 +7,12 @@
 </head>
 
 <body class="body_biljetter">
-  <nav>
-    <div >
+  <nav> <!--Inkluderar header och meny-->
+    <div > <!--Visar loggan högt upp på hemsidan-->
         <img src="loggaguld.png" alt="exempelbild" class="logo">
     </div>
     
-    <div class="nav-grid">
+    <div class="nav-grid"> <!--Menyraden-->
         <a href="index.html" class="nav-grid-item"><h2>Startsida</h2></a>
         <a href="biljetter.html" class="nav-grid-item"><h2>Biljetter</h2></a>
         <a href="recensioner.html" class="nav-grid-item"><h2>Recensioner</h2></a>
@@ -21,13 +21,13 @@
     </div>
   </nav>
 
-  <div class="movie-container">
+  <div class="movie-container"> <!--div för hela innehållet på sidan-->
     <label>Biljettbokning</label>
-    <select id="movie">
+    <select id="movie"> <!--"Meny" där rätt film väljs-->
       <option value="100">Österljus: Gryningen av den gyllene staden (100kr)</option> 
     </select>
 
-  <ul class="showcase">
+  <ul class="showcase"> <!--Lista där tillgänglig, vald och upptagen plats visas-->
     <li>
       <div class="seat"></div>
       <small>Tillgänglig</small>
@@ -44,29 +44,22 @@
     </li>
   </ul>
 
-  <div class="salon">
-    <div class="screen"></div>
-    <div class="row">
+  <div class="salon"> <!--div för hela salongen: bioduk och platser-->
+    
+    <div class="screen"></div> <!--Bioduk-->
+    
+    <div class="row"> <!--Rad 1-->
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat upptagen"></div>
+      <div class="seat upptagen"></div> <!--Visar platsen som upptagen-->
       <div class="seat upptagen"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
     </div>
-    <div class="row">
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    <div class="row">
+    
+    <div class="row"> <!--Rad 2-->
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
@@ -76,17 +69,8 @@
       <div class="seat"></div>
       <div class="seat"></div>
     </div>
-    <div class="row">
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat upptagen"></div>
-      <div class="seat upptagen"></div>
-      <div class="seat upptagen"></div>
-      <div class="seat upptagen"></div>
-    </div>
-    <div class="row">
+    
+    <div class="row"> <!--Rad 3-->
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
@@ -96,7 +80,19 @@
       <div class="seat"></div>
       <div class="seat"></div>
     </div>
-    <div class="row">
+    
+    <div class="row"> <!--Rad 4-->
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat upptagen"></div>
+      <div class="seat upptagen"></div>
+      <div class="seat upptagen"></div>
+      <div class="seat upptagen"></div>
+    </div>
+    
+    <div class="row"> <!--Rad 5-->
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
@@ -106,16 +102,28 @@
       <div class="seat"></div>
       <div class="seat"></div>
     </div>
+    
+    <div class="row"> <!--Rad 6-->
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
   </div>
 
-  <p class="text">
+  <p class="text"> <!--Text under salongen, visar antal valda platser och kostnad-->
   Du har valt <span id="count">0</span> platser som kostar <span id="total">0</span> kr
   </p>
 
 
-<div class="kontakt">
+<div class="kontakt"> <!--div som inkluderar "kontaktformuläret" längst ner på sidan-->
 
-  <div class="form-group">
+  <div class="form-group"> <!--div för första fältet för namn-->
     <h5 for="name">Namn</h5>
     <input 
     type="text" 
@@ -125,7 +133,7 @@
     />
   </div>
 
-  <div class="form-group">
+  <div class="form-group"> <!--div för andra fältet för mail-->
     <h5 for="mail">Mail</h5>
     <input 
     type="mail" 
@@ -135,13 +143,13 @@
     />
   </div>
 
-  <button class="button">Skicka</button>
+  <button class="button">Skicka</button> <!--Knapp för att skicka-->
 
 </div>
 
 </div>
 
-<script src="biljettsida.js"></script>
+<script src="biljettsida.js"></script> <!--länkar till en javascriptsida endast för biljettsidan-->
 
 </body>
 </html>
