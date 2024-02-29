@@ -236,16 +236,19 @@ img {
 }
 
 .rubrik-recensioner {
-    grid-column-start: 2;
-    grid-column-end: 5;
+    /*grid-column-start: 2;
+    grid-column-end: 5;*/
     font-size: 36pt;
+    justify-content: center;
     text-align: center;
     margin-top: 50px;
 }
 
 .recensioner {
-    display: grid;
-    grid-template-columns: 5vw 40vw 10vw 40vw 5vw;
+    /*display: grid;
+    grid-template-columns: 5vw 40vw 10vw 40vw 5vw;*/
+    display: flex;
+    flex-direction: column;
 }
 
 /*Texten på sidan*/
@@ -259,7 +262,7 @@ p {
 }
 
 .recension1 {
-    grid-column: 2;
+    /*grid-column: 2;*/
     margin-top: 100px;
     margin-left: 100px;
     text-align: left;
@@ -267,8 +270,9 @@ p {
 }
 
 .hide1 {
-    grid-column: 2;
+    /*grid-column: 2;*/
     margin-left: 100px;
+    margin-right: 100px;
     text-align: left;
     opacity: 0;
 }
@@ -278,7 +282,8 @@ p {
 }
 
 .recension2 {
-    grid-column: 4;
+    /*grid-column: 4;*/
+    margin-left: 100px;
     margin-right: 100px;
     text-align: right;
     opacity: 1;
@@ -286,7 +291,8 @@ p {
 }
 
 .hide2 {
-    grid-column: 4;
+    /*grid-column: 4;*/
+    margin-left: 100px;
     margin-right: 100px;
     text-align: left;
     opacity: 0;
@@ -297,15 +303,17 @@ p {
 }
 
 .recension3 {
-    grid-column: 2;
+    /*grid-column: 2;*/
     margin-left: 100px;
+    text-align: left;
     opacity: 1;
     /*border: 1px solid #cdcfd6;*/
 }
 
 .hide3 {
-    grid-column: 2;
+    /*grid-column: 2;*/
     margin-left: 100px;
+    margin-right: 100px;
     opacity: 0;
 }
 
@@ -314,18 +322,16 @@ p {
 }
 
 .recension4 {
-    grid-column: 4;
-    margin-top: 100px;
+    /*grid-column: 4;*/
     margin-right: 100px;
-    margin-bottom: 200px;
     text-align: right;
     /*border: 1px solid #cdcfd6;*/
 }
 
 .hide4 {
-    grid-column: 4;
+    /*grid-column: 4;*/
+    margin-left: 100px;
     margin-right: 100px;
-    margin-top: -20vh;
     text-align: left;
     opacity: 0;
 }
