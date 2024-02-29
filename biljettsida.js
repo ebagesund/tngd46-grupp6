@@ -7,16 +7,17 @@ const movieSelect = document.getElementById('movie');
 populateUI();
 let ticketPrice = +movieSelect.value;
 
-// Save selected movie index and price
+// sparar index och pris för valda platser
 function setMovieData(movieIndex, moviePrice) {
     localStorage.setItem('valdMovieIndex', movieIndex);
     localStorage.setItem('valdMoviePrice', moviePrice);
 }
 
-//update total count
+//uppdaterar id total och count - visar antal valda platser och total kostnad i texten under salongen
 function updateValdCount() {
     const valdSeats = document.querySelectorAll('.row .seat.vald');
 
+    //Regestrerar i local storage vilka plater som markeras
     const seatsIndex = [...valdSeats].map((seat) => [...seats].indexOf(seat));
 
     localStorage.setItem('valdSeats', JSON.stringify(seatsIndex));
@@ -47,14 +48,7 @@ function populateUI() {
     }
 }
 
-// Movie select event
-movieSelect.addEventListener('change', (e) => {
-    ticketPrice = +e.target.value;
-    setMovieData(e.target.valdIndex, e.target.value);
-    updateValdCount();
-  });
-
-
+// Klick på platser i salongen markeras som valda och upptagna platser kan ej markeras
 salon.addEventListener('click', (e) => {
     if(e.target.classList.contains('seat') && !e.target.classList.contains('.upptagen')) {
         e.target.classList.toggle('vald')
