@@ -582,3 +582,21 @@ h5 {
     
     
 }
+
+@media all and (min-width: 1000px) {
+    .hide1 {
+        width: 400px;
+    }
+    .hide2 {
+        width: 25%;
+        margin-right: 20%;
+        margin-left: 55%;
+    }
+    .hide3 {
+        width: 400px;
+    }
+    .hide4 {
+        width: 25%;
+        margin-right: 20%;
+        margin-left: 55%;
+}
