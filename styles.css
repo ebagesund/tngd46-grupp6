@@ -164,7 +164,7 @@ nav { /*Bakgrunden på meny-raden*/
     h2 { /*Texten i meny-raden (ej startsidan)*/
         color: white;
         text-align: center;
-        font-size: 14pt;
+        font-size: 12pt;
         margin: 0vw 3vw;
         font-weight: 100;
         font-family: Georgia, 'Times New Roman', Times, serif;
