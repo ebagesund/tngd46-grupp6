@@ -352,72 +352,82 @@ p {
     background-position-x: center;
 }
 
+.main-biljettsida {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    width: 40vw;
+    /*border: 1px solid #5b607c;*/
+}
+
+.flexbox-item1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /*border: 1px solid #5b607c;*/
+}
+
+.flexbox-item2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /*Biljettsidan är uppbyggd med grid i tre kolumner*/
 .movie-container {
-    display: grid;
-    grid-template-columns: 20vw 60vw 20vw;
-    margin-top: 50px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /*display: grid;*/
+    /*grid-template-columns: 20vw 60vw 20vw;*/
+    text-align: left;
 }
 
 /*"Meny" där rätt filmen väljs (dock finns det endast en)*/
 #movie {
-    grid-column: 2;
     border: 0;
     border-radius: 5px; /*Radie på ramen på rutan för att få rundarde hörn*/
-    width: 50%; /*Rutan tar upp 50% av column 2*/
-    margin: auto; /*placerar rutan i mitten av columnen*/
-    margin-top: 50px;
+    /*width: 50%; Rutan tar upp 50% av column 2*/
+    max-width: 150px;
+    /*margin: auto; placerar rutan i mitten av columnen*/
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*Justerar listan för tillgänglig, vald och upptagen*/
 .showcase {
     display: flex;
-    grid-column: 2;
     list-style-type: none; /*Tar bort punkter på listan*/
     justify-content: center; /*Placerar listan i mitten av */
-    padding: 10px;
+    padding: 2%;
     text-align: left;
+    font-size: 1em;
 }
 
 /*Justerar mellanrumm mellan listobjekten*/
 li {
-    margin: 5%;
-}
-
-/*Rubrik på sidan*/
-label { 
-    grid-column: 2;
-    color: white;
-    font-size: 36pt;
-}
-
-/*Justerar texten som berättar valda platser och kostnad*/
-.text {
-    grid-column: 2;
-    text-align: center;
-}
-
-/*Placerar salongen i column 2*/
-.salon {
-    grid-column: 2;
+    margin: 1em;
 }
 
 /*Justerar platserna i salongen och över*/
 .seat {
     grid-column: 2;
     background-color: white;
-    height: 12px;
-    width: 15px;
+    height: 1em;
+    width: 1em;
     margin: 3px;
-    border-top-left-radius: 10px; /*Radien gör vänstra övre hörnet rundat*/
-    border-top-right-radius: 10px; /*Radien gör högra övre hörnet rundat*/
+    border-top-left-radius: 0.5em; /*Radien gör vänstra övre hörnet rundat*/
+    border-top-right-radius: 0.5em; /*Radien gör högra övre hörnet rundat*/
 }
 
 /*Justerar radernas placering*/
 .row {
-    grid-column: 2;
     display: flex; /*Placerar platserna i rader istället för i en rad*/
     justify-content: center; /*Placerar raderna i mitten av columnen*/
 }
@@ -479,10 +489,12 @@ p.text span {
 
 /*Justerar skicka-knappen*/
 .button {
-    margin: 20px;
+    display: flex;
+    margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 0;
     border-radius: 5px; /*Ger rundade hörn*/
+    margin-top: 2em;
 }
 
 

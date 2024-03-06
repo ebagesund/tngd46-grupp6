@@ -21,133 +21,141 @@
     </div>
   </nav>
 
-  <div class="movie-container"> <!--div för hela innehållet på sidan-->
-    <label>Biljettbokning</label>
-    <select id="movie"> <!--"Meny" där rätt film väljs-->
-      <option value="100">Österljus: Gryningen av den gyllene staden (100kr)</option> 
-    </select>
+  <h2 class="rubrik-recensioner">Biljettbokning</h2>
 
-  <ul class="showcase"> <!--Lista där tillgänglig, vald och upptagen plats visas-->
-    <li>
-      <div class="seat"></div>
-      <small>Tillgänglig</small>
-    </li>
+<main class="main-biljettsida">
 
-    <li>
-      <div class="seat vald"></div>
-      <small>Vald</small>
-    </li>
+  <div class="flexbox-item1">
+    <div class="movie-container">
+      <select id="movie"> <!--"Meny" där rätt film väljs-->
+        <option value="100">Österljus: Gryningen av den gyllene staden (100kr)</option> 
+      </select>
+    </div>
+    <div class="kontakt">
+      
+      <div class="form-group"> <!--div för första fältet för namn-->
+        <h5 for="name">Namn</h5>
+        <input 
+          type="text" 
+          class="form-control" 
+          id="name" 
+          placeholder="Skriv ditt Namn" 
+        />
+      </div>
+    
+      <div class="form-group"> <!--div för andra fältet för mail-->
+        <h5 for="mail">Mail</h5>
+        <input 
+          type="mail" 
+          class="form-control" 
+          id="mail" 
+          placeholder="Skriv din mail" 
+        />
+      </div>
 
-    <li>
-      <div class="seat upptagen"></div>
-      <small>Upptagen</small>
-    </li>
-  </ul>
-
-  <div class="salon"> <!--div för hela salongen: bioduk och platser-->
-    
-    <div class="screen"></div> <!--Bioduk-->
-    
-    <div class="row"> <!--Rad 1-->
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat upptagen"></div> <!--Visar platsen som upptagen-->
-      <div class="seat upptagen"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
     </div>
-    
-    <div class="row"> <!--Rad 2-->
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    
-    <div class="row"> <!--Rad 3-->
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    
-    <div class="row"> <!--Rad 4-->
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat upptagen"></div>
-      <div class="seat upptagen"></div>
-      <div class="seat upptagen"></div>
-      <div class="seat upptagen"></div>
-    </div>
-    
-    <div class="row"> <!--Rad 5-->
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    
-    <div class="row"> <!--Rad 6-->
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-
   </div>
 
-  <p class="text"> <!--Text under salongen, visar antal valda platser och kostnad-->
-  Du har valt <span id="count">0</span> platser som kostar <span id="total">0</span> kr
-  </p>
+  <div class="flexbox-item2">
+    
+    <ul class="showcase"> <!--Lista där tillgänglig, vald och upptagen plats visas-->
+      <li>
+        <div class="seat"></div>
+        <small>Tillgänglig</small>
+      </li>
 
+      <li>
+        <div class="seat vald"></div>
+        <small>Vald</small>
+      </li>
 
-<div class="kontakt"> <!--div som inkluderar "kontaktformuläret" längst ner på sidan-->
+      <li>
+        <div class="seat upptagen"></div>
+        <small>Upptagen</small>
+      </li>
+    </ul>
 
-  <div class="form-group"> <!--div för första fältet för namn-->
-    <h5 for="name">Namn</h5>
-    <input 
-    type="text" 
-    class="form-control" 
-    id="name" 
-    placeholder="Skriv ditt Namn" 
-    />
+    <div class="salon"> <!--div för hela salongen: bioduk och platser-->
+    
+      <div class="screen"></div> <!--Bioduk-->
+    
+      <div class="row"> <!--Rad 1-->
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat upptagen"></div> <!--Visar platsen som upptagen-->
+        <div class="seat upptagen"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    
+      <div class="row"> <!--Rad 2-->
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    
+      <div class="row"> <!--Rad 3-->
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    
+      <div class="row"> <!--Rad 4-->
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat upptagen"></div>
+        <div class="seat upptagen"></div>
+        <div class="seat upptagen"></div>
+        <div class="seat upptagen"></div>
+      </div>
+    
+      <div class="row"> <!--Rad 5-->
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    
+      <div class="row"> <!--Rad 6-->
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+    </div>
+
+    <p class="text"> <!--Text under salongen, visar antal valda platser och kostnad-->
+    Du har valt <span id="count">0</span> platser som kostar <span id="total">0</span> kr
+    </p>
   </div>
 
-  <div class="form-group"> <!--div för andra fältet för mail-->
-    <h5 for="mail">Mail</h5>
-    <input 
-    type="mail" 
-    class="form-control" 
-    id="mail" 
-    placeholder="Skriv din mail" 
-    />
-  </div>
+</main>
 
-  <button class="button">Skicka bokning</button> <!--Knapp för att skicka-->
 
-</div>
-
-</div>
+<button class="button">Skicka bokning</button> <!--Knapp för att skicka-->
 
 <script src="biljettsida.js"></script> <!--länkar till en javascriptsida endast för biljettsidan-->
 
