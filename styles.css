@@ -140,7 +140,7 @@ nav { /*Bakgrunden på meny-raden*/
 
 /*ANPASSAT FÖR MOBILBREDD*/
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
     .h2_startsida {
         font-size: 20pt;
         margin-top: 20vh;
