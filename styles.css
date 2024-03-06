@@ -170,6 +170,9 @@ nav { /*Bakgrunden på meny-raden*/
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
     
+    h5 {
+        font-size: 10pt;
+    }
     
 }
 
@@ -521,8 +524,13 @@ p.text span {
 /*Justerar formuläret: ruta och typsnitt*/
 .form-control {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
     border: 0;
     border-radius: 5px; /*Ger rundade hörn*/
+}
+
+h5 {
+    font-size: 1em;
 }
 
 /*Justerar skicka-knappen*/
