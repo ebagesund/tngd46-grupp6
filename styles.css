@@ -138,43 +138,7 @@ nav { /*Bakgrunden på meny-raden*/
 
 
 
-/*ANPASSAT FÖR MOBILBREDD*/
 
-@media all and (max-width: 900px) {
-    .h2_startsida {
-        font-size: 20pt;
-        margin-top: 20vh;
-        /*border: 1px solid #5b607c;*/
-    }
-    
-    .nav-grid-start { /*Justerar meny-raden på startsidan*/
-        display: flex;
-        flex-wrap: wrap;
-        /*border: 1px solid #c9cedf;*/
-        width: 100vw;
-        justify-content: center;
-        margin-top: -20vh;
-    }
-    .nav-grid-start > .nav-grid-item{
-        /*border: 1px solid #c9cedf;*/
-        width: 3000px;
-        height: 20px;
-    }
-
-    h2 { /*Texten i meny-raden (ej startsidan)*/
-        color: white;
-        text-align: center;
-        font-size: 12pt;
-        margin: 0vw 3vw;
-        font-weight: 100;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    h5 {
-        font-size: 10pt;
-    }
-    
-}
 
 
 
@@ -436,9 +400,10 @@ p {
     border: 0;
     border-radius: 5px; /*Radie på ramen på rutan för att få rundarde hörn*/
     /*width: 50%; Rutan tar upp 50% av column 2*/
-    max-width: 150px;
+    max-width: 10.5em;
     /*margin: auto; placerar rutan i mitten av columnen*/
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
 }
 
 /*Justerar listan för tillgänglig, vald och upptagen*/
@@ -541,6 +506,8 @@ h5 {
     border: 0;
     border-radius: 5px; /*Ger rundade hörn*/
     margin-top: 2em;
+    margin-bottom: 50px;
+    font-size: 1em;
 }
 
 
@@ -585,4 +552,33 @@ h5 {
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+}
+/*ANPASSAT FÖR MOBILBREDD*/
+
+@media all and (max-width: 900px) {
+    .h2_startsida {
+        font-size: 20pt;
+        margin-top: 20vh;
+        /*border: 1px solid #5b607c;*/
+    }
+    
+    .nav-grid-start { /*Justerar meny-raden på startsidan*/
+        display: flex;
+        flex-wrap: wrap;
+        /*border: 1px solid #c9cedf;*/
+        width: 100vw;
+        justify-content: center;
+        margin-top: -20vh;
+    }
+    .nav-grid-start > .nav-grid-item{
+        /*border: 1px solid #c9cedf;*/
+        width: 3000px;
+        height: 20px;
+    }
+
+    h2 { /*Texten i meny-raden (ej startsidan)*/
+        font-size: 12pt;
+    }
+    
+    
 }
