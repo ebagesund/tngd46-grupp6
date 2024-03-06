@@ -160,6 +160,16 @@ nav { /*Bakgrunden på meny-raden*/
         width: 3000px;
         height: 20px;
     }
+
+    h2 { /*Texten i meny-raden (ej startsidan)*/
+        color: white;
+        text-align: center;
+        font-size: 14pt;
+        margin: 0vw 3vw;
+        font-weight: 100;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
     
 }
 
