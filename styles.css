@@ -144,9 +144,10 @@ nav { /*Bakgrunden på meny-raden*/
 
 .body_galleri {
     background-image: url(krigare.png);
+    background-color: black;
     background-repeat: no-repeat;
     background-position-x: center;
-    margin:0
+    margin: auto;
 }
 
 * {box-sizing:border-box}
