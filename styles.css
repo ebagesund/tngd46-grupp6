@@ -530,7 +530,7 @@ h5 {
 
 /*Justerar rubriken*/
 .rubrik-sida {
-    font-size: 36pt;
+    font-size: 5em;
     text-align: center;
     margin: 0;
 }
@@ -541,8 +541,35 @@ h5 {
     margin-top: 50px;
     text-align: left;
     width: 50%;
-
     justify-content: center;
+}
+
+.filmevent-text-centrerad {
+    margin: auto;
+    font-size: 2em;
+    text-align: center;
+    width: 50%;
+}
+
+.klocka {
+    width: 2em;
+}
+
+.kartnål {
+    width: 2em;
+}
+
+.biljett {
+    width: 3em;
+}
+
+.filmevent-text-vänster {
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    font-size: 2em;
 }
 
 /*Justerar bilden på postern*/
@@ -553,6 +580,7 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
 /*ANPASSAT FÖR MOBILBREDD*/
 
 @media screen and (max-width: 600px) {
