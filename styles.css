@@ -529,7 +529,7 @@ h5 {
 
 /*Justerar rubriken*/
 .rubrik-sida {
-    font-size: 5em;
+    font-size: 3em;
     text-align: center;
     margin: 0;
 }
@@ -565,10 +565,19 @@ h5 {
 .filmevent-text-vänster {
     margin: auto;
     margin-top: 1em;
-    text-align: center;
+    text-align: left;
     width: 50%;
     justify-content: center;
     font-size: 2em;
+}
+
+#biljett-link {
+    color: white;
+}
+
+#biljett-link:hover {
+    text-decoration: none;
+    color: #c26716;
 }
 
 /*Justerar bilden på postern*/
@@ -579,6 +588,8 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
+
 
 /*ANPASSAT FÖR MOBILBREDD*/
 
