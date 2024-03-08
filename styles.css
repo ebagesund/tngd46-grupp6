@@ -384,8 +384,6 @@ p {
     justify-content: center;
 }
 
-
-/*Biljettsidan är uppbyggd med grid i tre kolumner*/
 .movie-container {
     display: flex;
     flex-direction: column;
@@ -520,7 +518,7 @@ h5 {
     background-position-x: center;
 }
 
-/*Eventsidan är uppbyggd med grid i fyra kolumner*/
+/*Eventsidan är uppbyggd med flexbox*/
 .container-filmevent {
     display: flex;
     flex-direction: column;
@@ -529,9 +527,64 @@ h5 {
 
 /*Justerar rubriken*/
 .rubrik-sida {
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
-    margin: 0;
+}
+
+/*Justerar underrubriken*/
+.filmevent-text-centrerad {
+    margin: auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+/*Bild på klocka*/
+.klocka {
+    width: 2em;
+}
+
+/*Bild på kartnål*/
+.kartnål {
+    width: 2em;
+}
+
+/*Bild på biljett*/
+.biljett {
+    width: 3em;
+}
+
+/*Text till ikonerna*/
+.filmevent-text-ikoner {
+    margin: auto;
+    margin-top: 1em;
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+}
+
+/*Justerar text färgen på länken för biljettsida (biljettikonen) */
+#biljett-link {
+    color: white;
+}
+
+/*Hovereffekt för länken till biljettsidan (biljettikonen)*/
+#biljett-link:hover {
+    text-decoration: none;
+    color: #c26716;
+}
+
+/*Justerar div för brödtext och poster*/
+.text-bild {
+    display: flex;
+    flex-direction: wrap;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 70%;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid #5b607c;*/
 }
 
 /*Justerar brödtexten*/
@@ -539,45 +592,7 @@ h5 {
     margin: auto;
     margin-top: 50px;
     text-align: left;
-    width: 50%;
-    justify-content: center;
-}
-
-.filmevent-text-centrerad {
-    margin: auto;
-    font-size: 2em;
-    text-align: center;
-    width: 50%;
-}
-
-.klocka {
-    width: 2em;
-}
-
-.kartnål {
-    width: 2em;
-}
-
-.biljett {
-    width: 3em;
-}
-
-.filmevent-text-vänster {
-    margin: auto;
-    margin-top: 1em;
-    text-align: left;
-    width: 50%;
-    justify-content: center;
-    font-size: 2em;
-}
-
-#biljett-link {
-    color: white;
-}
-
-#biljett-link:hover {
-    text-decoration: none;
-    color: #c26716;
+    max-width: 700px;
 }
 
 /*Justerar bilden på postern*/
@@ -588,6 +603,7 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
 
 
 
@@ -608,6 +624,7 @@ h5 {
         justify-content: center;
         margin-top: -20vh;
     }
+
     .nav-grid-start > .nav-grid-item{
         /*border: 1px solid #c9cedf;*/
         width: 3000px;
@@ -622,29 +639,51 @@ h5 {
         background-size: 2000px;
     }
     
+    .text-bild {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 75%;
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .poster {
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+    }
 }   
 
 @media all and (min-width: 1200px) {
     .hide1 {
         width: 400px;
     }
+
     .hide2 {
         width: 25%;
         margin-right: 20%;
         margin-left: 55%;
     }
+
     .hide3 {
         width: 400px;
     }
+
     .hide4 {
         width: 25%;
         margin-right: 20%;
         margin-left: 55%;
     }
     h3 {
-        font-size: 40pt;
-        
+        font-size: 40pt;   
     }
+
     .headimg { 
         width: 600px; 
         margin-bottom: 0; 
@@ -654,8 +693,7 @@ h5 {
     }
 
     .time h4 { /*Justerar hur siffrorna i nedräkningen ser ut*/
-        font-size: 40pt;
-        
+        font-size: 40pt;  
     }
 
     .countdown {
