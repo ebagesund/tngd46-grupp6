@@ -579,8 +579,11 @@ h5 {
         font-size: 12pt;
     }
     
+    .body_biljetter {
+        background-size: 2000px;
+    }
     
-}
+}   
 
 @media all and (min-width: 1200px) {
     .hide1 {
