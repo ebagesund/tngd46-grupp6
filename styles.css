@@ -555,7 +555,7 @@ h5 {
 }
 /*ANPASSAT FÖR MOBILBREDD*/
 
-@media all and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .h2_startsida {
         font-size: 20pt;
         margin-top: 20vh;
@@ -599,4 +599,6 @@ h5 {
         width: 25%;
         margin-right: 20%;
         margin-left: 55%;
+}
+
 }
