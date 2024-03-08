@@ -25,8 +25,6 @@ header { /*Denna justerar framförallt startsidan*/
 }
 
 
-
-
 /* NEDRÄKNINGEN PÅ STARTSIDAN */
 h3 {  /*Endast för texten "Filmen börjar om:"*/
     margin:auto 2.5vw;
@@ -50,7 +48,7 @@ small { /*Justerar texten "days, hours, minutes och secounds"*/
     margin-bottom: 15vw;
     padding-top: 8vw;
     margin-top: -7vw;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .time { /*Justerar boxarna för dagar, timmar, osv, i nedräkningen*/
@@ -146,9 +144,10 @@ nav { /*Bakgrunden på meny-raden*/
 
 .body_galleri {
     background-image: url(krigare.png);
+    background-color: black;
     background-repeat: no-repeat;
     background-position-x: center;
-    margin:0
+    margin: auto;
 }
 
 * {box-sizing:border-box}
@@ -352,7 +351,7 @@ p {
 /* SPECIFIK CSS FÖR BILJETTER-SIDAN */
 
 .body_biljetter {
-    background-image: url(sten.png);
+    background-image: url(bg\ gul\ sten\ v2\ 1920x1080.png);
     background-repeat: no-repeat;
     background-position-x: center;
 }
@@ -583,7 +582,7 @@ h5 {
 
 /*ANPASSAT FÖR MOBILBREDD*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .h2_startsida {
         font-size: 20pt;
         margin-top: 20vh;
@@ -608,10 +607,13 @@ h5 {
         font-size: 12pt;
     }
     
+    .body_biljetter {
+        background-size: 2000px;
+    }
     
-}
+}   
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1200px) {
     .hide1 {
         width: 400px;
     }
@@ -627,4 +629,25 @@ h5 {
         width: 25%;
         margin-right: 20%;
         margin-left: 55%;
-}}
+    }
+    h3 {
+        font-size: 40pt;
+        
+    }
+    .headimg { 
+        width: 600px; 
+        margin-bottom: 0; 
+    }
+    .h2_startsida { 
+        font-size: 40pt;
+    }
+
+    .time h4 { /*Justerar hur siffrorna i nedräkningen ser ut*/
+        font-size: 40pt;
+        
+    }
+
+    .countdown {
+        margin-bottom: 330px;
+    }
+}
