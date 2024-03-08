@@ -3,7 +3,7 @@
 
 body {
     background-color: black;
-    background-image: url(Header\ v3\ 1920x1080.png);
+    background-image: url(start_head_img.png);
     background-repeat: no-repeat;
     background-position-x: center;
     margin: auto;
@@ -351,7 +351,7 @@ p {
 /* SPECIFIK CSS FÖR BILJETTER-SIDAN */
 
 .body_biljetter {
-    background-image: url(bg\ gul\ sten\ v2\ 1920x1080.png);
+    background-image: url(back_img_biljett.png);
     background-repeat: no-repeat;
     background-position-x: center;
 }
