@@ -154,26 +154,26 @@ nav { /*Bakgrunden på meny-raden*/
 
 /*Självaste bildgalleriet justeras nedan*/
 
-img {
+img { /*bilderna*/
     vertical-align: middle;
     width: 1000px;
 }
 
-.mySlides {
+.mySlides { /*bilderna som inte syns*/
     display: none;
     width: 100%;
     /*border: 1px solid #5b607c;*/
     margin-top: 5vh;
 }
 
-.slideshow-container {
+.slideshow-container { /*boxen för galleriet*/
     max-width: 1000px;
     position: relative;
     margin: auto;
     /*border: 1px solid #5b607c;*/
 }
   
-  /* Next & previous buttons */
+  /* nästa och föregående (pilarna) */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -189,18 +189,17 @@ img {
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
-  .next {
+  .next { /*Sätter nästa-knappen till höger*/
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /* Lägger en något transparant bakgrund vid hover */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* The dots/bullets/indicators */
+  /* Punkterna som visar vilken bild */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -217,7 +216,7 @@ img {
     
   }
   
-/* Fading animation */
+/* Fade i bilderna */
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
