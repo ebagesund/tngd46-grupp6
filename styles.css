@@ -657,6 +657,11 @@ h5 {
         align-items: center;
         justify-content: center;
     }
+
+    img {
+        width: 100%;
+    }
+
 }  
 
 @media all and (min-width: 1200px) {
