@@ -633,10 +633,6 @@ h5 {
         width: 100%;
         height: 20px;
     }
-
-    h2 { /*Texten i meny-raden (ej startsidan)*/
-        font-size: 12pt;
-    }
     
     .body_biljetter {
         background-size: 2000px;
