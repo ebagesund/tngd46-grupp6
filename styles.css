@@ -608,6 +608,33 @@ h5 {
 }
 
 
+/* SPECIFIK CSS FÖR TACK-sidan */
+.body_tack {
+    background-color: black;
+}
+
+.tackflexbox {
+	display:flex;
+	padding-top: 10%;
+	flex-wrap: wrap;
+}
+
+.tackflexboxitem1 {
+	margin: auto;
+}
+
+.tackflexboxitem1 h1 {
+	font-size: 30px; 
+	color: white; 
+}
+
+.tackflexboxitem1 p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 2em; 
+	color: white; 
+}
+
+
 
 
 /*ANPASSAT FÖR MOBILBREDD*/
