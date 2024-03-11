@@ -1,3 +1,5 @@
+// koden är hjälpt av youtube-video där biosalong byggs upp, däremot är delar bortplockade och modifierade för att passa html och css
+
 const salon = document.querySelector('.salon');
 const seats = document.querySelectorAll('.row .seat:not(.upptagen');
 const count = document.getElementById('count');

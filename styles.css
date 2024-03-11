@@ -233,6 +233,7 @@ img {
 
 /* SPECIFIK CSS FÖR RECESIONER-SIDAN */
 
+/* Bakgrundsbild för sidan */
 .body_recensioner {
     background-image: url(fackla.png);
     background-repeat: no-repeat;
@@ -350,12 +351,14 @@ p {
 
 /* SPECIFIK CSS FÖR BILJETTER-SIDAN */
 
+/* Bakgrundsbild för sidan */
 .body_biljetter {
     background-image: url(back_img_biljett.png);
     background-repeat: no-repeat;
     background-position-x: center;
 }
 
+/* Flexbox för innhållet på sidan, placerar flexboxitems bredvid varandra/efter varandra */
 .main-biljettsida {
     display: flex;
     flex-direction: row;
@@ -365,9 +368,9 @@ p {
     justify-content: center;
     margin-top: 2em;
     width: 40vw;
-    /*border: 1px solid #5b607c;*/
 }
 
+/* Justerar val av film samt formulär */
 .flexbox-item1 {
     display: flex;
     flex-direction: column;
@@ -375,6 +378,7 @@ p {
     /*border: 1px solid #5b607c;*/
 }
 
+/* Justerar biosalong */
 .flexbox-item2 {
     display: flex;
     flex-direction: column;
@@ -384,11 +388,10 @@ p {
     justify-content: center;
 }
 
+/* Justerar val av film */
 .movie-container {
     display: flex;
     flex-direction: column;
-    /*display: grid;*/
-    /*grid-template-columns: 20vw 60vw 20vw;*/
     text-align: left;
 }
 
@@ -396,9 +399,7 @@ p {
 #movie {
     border: 0;
     border-radius: 5px; /*Radie på ramen på rutan för att få rundarde hörn*/
-    /*width: 50%; Rutan tar upp 50% av column 2*/
-    max-width: 10.5em;
-    /*margin: auto; placerar rutan i mitten av columnen*/
+    max-width: 10.5em; /* Max-bredd på rutan */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1em;
 }
@@ -463,7 +464,6 @@ li {
     width: 160px;
     height: 70px;
     transform: rotateX(-45deg); /*Ger duken lutning*/
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75); /*Ger duken ett ljus*/
     margin: auto; 
 }
 
@@ -505,6 +505,8 @@ h5 {
     margin-top: 2em;
     margin-bottom: 50px;
     font-size: 1em;
+    background-color: white;
+    color:#c26716;
 }
 
 
@@ -661,21 +663,22 @@ h5 {
 }   
 
 @media all and (min-width: 1200px) {
-    .hide1 {
+
+    .hide1 { /*Justerar bredd på brödtext på recensionsidan när bredden på sidan är minst 1200px */
         width: 400px;
     }
 
-    .hide2 {
+    .hide2 { /*Justerar bredd på brödtext på recensionsidan när bredden på sidan är minst 1200px */
         width: 25%;
         margin-right: 20%;
         margin-left: 55%;
     }
 
-    .hide3 {
+    .hide3 { /*Justerar bredd på brödtext på recensionsidan när bredden på sidan är minst 1200px */
         width: 400px;
     }
 
-    .hide4 {
+    .hide4 { /*Justerar bredd på brödtext på recensionsidan när bredden på sidan är minst 1200px */
         width: 25%;
         margin-right: 20%;
         margin-left: 55%;
