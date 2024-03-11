@@ -514,6 +514,7 @@ h5 {
 
 /* SPECIFIK CSS FÖR FILMEVENT-SIDAN */
 
+/* Bakgrundsbild för sidan */
 .body_filmevent {
     background-image: url(krigare.png);
     background-repeat: no-repeat;
@@ -660,7 +661,7 @@ h5 {
         align-items: center;
         justify-content: center;
     }
-}   
+}  
 
 @media all and (min-width: 1200px) {
 
