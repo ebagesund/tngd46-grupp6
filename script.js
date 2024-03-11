@@ -35,7 +35,7 @@ setInterval(updateCountdowntime, 1000);
 
 
     
-// BILDGALLERI - funkar inte :(
+// BILDGALLERI
 
 let slideIndex = 1;
 showSlides(slideIndex);
