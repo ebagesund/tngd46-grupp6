@@ -580,6 +580,7 @@ h5 {
     display: flex;
     flex-direction: wrap;
     margin: auto;
+    margin-bottom: 50px;
     padding-left: 1em;
     padding-right: 1em;
     width: 70%;
@@ -595,6 +596,7 @@ h5 {
     margin-top: 50px;
     text-align: left;
     max-width: 700px;
+    padding: 1em;
 }
 
 /*Justerar bilden på postern*/
@@ -604,7 +606,11 @@ h5 {
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+    padding: 1em;
+    margin-bottom: 10%;
 }
+
+
 
 
 /* SPECIFIK CSS FÖR TACK-sidan */
@@ -619,12 +625,7 @@ h5 {
 }
 
 .tackflexboxitem1 {
-	margin: auto;
-}
-
-.tackflexboxitem1 h1 {
-	font-size: 30px; 
-	color: white; 
+	margin: auto; /* Centrerar texten */
 }
 
 .tackflexboxitem1 p {
